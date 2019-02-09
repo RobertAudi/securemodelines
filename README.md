@@ -18,21 +18,26 @@ let g:secure_modelines_allowed_items = [
             \ "softtabstop", "sts",
             \ "tabstop",     "ts",
             \ "shiftwidth",  "sw",
-            \ "expandtab",   "et",   "noexpandtab", "noet",
+            \ "expandtab",   "et",   "noexpandtab",   "noet",
             \ "filetype",    "ft",
             \ "foldmethod",  "fdm",
-            \ "readonly",    "ro",   "noreadonly", "noro",
-            \ "rightleft",   "rl",   "norightleft", "norl"
+            \ "readonly",    "ro",   "noreadonly",    "noro",
+            \ "rightleft",   "rl",   "norightleft",   "norl",
+            \ "cindent",     "cin",  "nocindent",     "nocin",
+            \ "smartindent", "si",   "nosmartindent", "nosi",
+            \ "autoindent",  "ai",   "noautoindent",  "noai",
+            \ "spell",               "nospell",
+            \ "spelllang"
             \ ]
 ```
 
 ### `g:secure_modelines_verbose`
 
-The `g:secure_modelines_verbose` option, if set to something true, will make the script warn when a modeline attempts to set any other option.
+The `g:secure_modelines_verbose` option, if set to something `1`, will make the script warn when a modeline attempts to set any other option. By default it is `0`.
 
 ### `g:secure_modelines_modelines`
 
-The `g:secure_modelines_modelines` option overrides the number of lines to check. By default it is 5.
+The `g:secure_modelines_modelines` option overrides the number of lines to check. By default it is `5`.
 
 ### `g:secure_modelines_leave_modeline`
 
